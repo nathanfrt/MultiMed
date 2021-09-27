@@ -1,0 +1,565 @@
+<html>
+    <head>
+        <meta charset="URF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MultiMed</title>
+        <link rel="shortcut icon" type="imagex/png" href="/Imagens/multi.png">
+        <link href="estilos.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="font-awesome/css/all.css" rel="stylesheet">
+        <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+
+
+    <body>
+        <div class="cabecalho">
+            <div class="logoCabecalho">
+                <a href="/">
+                    <img src="/Imagens/Logo.png">
+                </a>
+            </div>
+
+            <div id="main" onclick="clickCategorias()">
+                <i class="fas fa-home"></i>                
+            </div>
+
+            <div class="categorias hidden" >
+                <a href="#conteudo1">Novidades</a>
+                <a href="#conteudo2">MultiMed</a>
+                <a href="#conteudo3">Benefícios</a>
+                <a href="#conteudo4">Depoimentos</a>
+                <a href="#conteudo5">Planos</a>
+                <a href="#conteudo6">Dúvidas Frequentes</a>
+            </div>
+        </div>
+
+
+        <!--Banners principal -->
+        <div class="bannerPrincipal">
+            
+            <div class="bannerImg">
+                <img src="">
+            </div>
+            
+            <div class="row bannerTextos">        
+
+                <div class="container">
+                    <h1 class="col-md-8 col-12 divTextBanner">
+                        Comerciante, preparamos um plano imperdível para você! Benefícios por menos de 1 real por dia.
+                    </h1>
+
+                    <h6 class="col-md-7 col-12 divTextBanner">
+                        Já imaginou ter Atendimento médico, Plano Funeral e Clube de Descontos, tudo isso pelo preço de um? 
+                        Isso mesmo, o Conecta Empreenda juntamente com o SindilojasBH e região buscaram parcerias e estão
+                        beneficiando os seus representados com essa oportunidade única.
+                    </h6>
+
+                    <button class="col-xs-2" id="divButton" onclick="botaoQuero()">Quero agora</button>                    
+                </div>                                  
+
+            </div>
+
+            <div class="parceirosImg">
+                <a href="https://www.instagram.com/conectaempreenda/">
+                    <img src="Imagens/ConectaEmpreenda.png">
+                </a>
+                <a href="http://sindilojasbh.com.br/site/">
+                    <img src="Imagens/sindiLojas.png">
+                </a>
+            </div>           
+                           
+        </div>
+
+        <!--Banners principal mobile / obs: podemos fazer alterações via script também, nesse caso com HTML facilita nosso serviço-->
+        <div class="bannerPrincipalMobile hidden">
+            
+            <div class="bannerImg">
+                <img src="/Imagens/bannerobile.png">
+            </div>
+            
+            <div class="row bannerTextos">        
+
+                <div class="container">
+                    <h1 class="col-md-8 col-12 divTextBanner">
+                        Mais de 20 benefícios gratuitos que garantem saúde para você e para quem você ama.
+                    </h1>
+
+                    <h6 class="col-md-7 col-12 divTextBanner">
+                        Planos individual e familiar com valor único, custando muito menos e com vantagens exclusivas. 
+                        Não possui carência, nem pedido de autorização. Sem restrição para inclusão de dependentes.
+                        Zero burocracia.
+                    </h6>
+
+                    <button class="col-xs-2" id="divButton" onclick="botaoQuero()">Quero agora</button>                    
+                </div>                                  
+
+            </div>                           
+        </div>
+
+
+        <!--Conteúdo 1 Master/ Saúde em 1o lugar -->
+        <div id="conteudo1">
+
+            <div class="container">
+                <div class="conteudoText">
+                    <span>SUA SAÚDE E DE QUEM VOCÊ AMA</span>
+                    <span>em primeiro lugar</span>
+                </div>
+    
+                <table id="tableC1">
+                    <tr>
+                        <td>
+                            <img src="Imagens/Rectangle 5.png">
+                        </td>
+                        <td>
+                            <span>Você será atendido no Materdei, Hospital Socor e Madre Teresa. Os exames podem
+                                ser realizados nos laboratórios Axial, São Marcos e Geraldo Lustosa, com preço 
+                                fixo para cada procedimento. Além das especialidades médicas mais procuradas, 
+                                oferecemos também como parte do plano, o acesso a sessões com nutricionista, 
+                                psicólogos, psiquiatras, fisioterapia (também em estética), auxilio funeral, 
+                                descontos em medicamentos e diversos produtos da Drogaria Araújo.</span>
+                                <button class="col-xs-2 buttonQuero" onclick="botaoQuero()">Quero agora</button>     
+                        </td>
+                    </tr>
+                </table>
+            </div>           
+
+        </div>
+
+
+        <!--Conteúdo 2 Master/ Por que MultiMed -->
+        <div id="conteudo2">
+
+            <div class="container">
+                <table id="tableC2">
+                    <tr>
+                        <td>
+                            <label>POR QUE</label>
+                            <label>MultiMed</label>
+                        </td>
+                        <td>
+                            <span>1</span>   
+                            <span>Sem restrição para inclusão de dependentes, parente ou não parente.</span>
+                        </td>
+                        <td>
+                            <span>2</span>
+                            <span>Adesão sem restrição de idade. Exames com preço fixo para cada procedimento.</span>
+                        </td>
+                        <td>
+                            <span>3</span>
+                            <span>Sem restrições para doenças pré-existentes e congênitas. Zero burocaria.</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!--Conteúdo 3 Master/ Benefícios -->
+        <div id="conteudo3" class="beneficios">
+
+            <div class="container">
+                                   
+                <div class="conteudoText">
+                    <span>CONHEÇA OS</span>
+                    <span>Benefícios</span>
+                </div>
+
+                <div class="Cards">
+
+                    <div class="col-md-3 col-12 cardBeneficios">
+                        <a href="">
+                            <img src="Imagens/descontos.png">
+                            <span class="cardTitulo">Clube de descontos</span>
+                            <span class="cardDescricao">Tenha descontos incríveis e economize em compras, comidas, gasolinas, vestuários, uma magnífico clube de descontos.</span>
+                            <span class="cardPreco">
+                                <span>PRECO DE MERCADO</span>
+                                <span>R$19,90</span>
+                                <span>/mês</span>
+                            </span>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col-md-3 col-12 cardBeneficios">
+                        <a href="">
+                            <img src="Imagens/assFuneral.png">
+                            <span class="cardTitulo">Assistência funeral</span>
+                            <span class="cardDescricao">Sabemos que é um assunto complicado, mas temos que estar preparados. Seguro de vida com plano funeral para você e sua família.</span>
+                            <span class="cardPreco">
+                                <span>PRECO DE MERCADO</span>
+                                <span>R$45,90</span>
+                                <span>/mês</span>
+                            </span>
+                        </a>                        
+                    </div>
+    
+                    <div class="col-md-3 col-12 cardBeneficios">
+                        <a href="">
+                            <img src="Imagens/MultiMed.png">
+                            <span class="cardTitulo">MultiMed</span>
+                            <span class="cardDescricao">Um serviço que cabe todas as pessoas que você gosta, sem a necessidade de comprovação de vínculo familiar.</span>
+                            <span class="cardPreco">
+                                <span>PRECO DE MERCADO</span>
+                                <span>R$49,90</span>
+                                <span>/mês</span>
+                            </span>
+                        </a>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-3 cardBeneficios">
+                        <a href="">
+                            <img src="Imagens/seguro.png">
+                            <span class="cardTitulo">Seguro</span>
+                            <span class="cardDescricao">Acontecimentos como acidentes pessoais, podem ser minimizados com um seguro que entende de proteção e cuidado na medida certa.</span>
+                            <span class="cardPreco">
+                                <span>PRECO DE MERCADO</span>
+                                <span>R$14,90</span>
+                                <span>/mês</span>
+                            </span>
+                        </a>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-3 cardBeneficios">
+                        <a href="">
+                            <img src="Imagens/sorteio.png">
+                            <span class="cardTitulo">Sorteio</span>
+                            <span class="cardDescricao">O segurado principal receberá, 1 (um) número, informado no certificado de sorteio, que irá habilitá-lo a concorrer a sorteios pela Loteria Federal.</span>
+                            <span class="cardPreco">
+                                <span>PRECO DE MERCADO</span>
+                                <span>R$9,90</span>
+                                <span>/mês</span>
+                            </span>
+                        </a>                        
+                    </div>
+                </div>                     
+            </div>
+        </div>
+
+
+        <!--Conteúdo 4 Master/ Depoimentos -->
+        <div id="conteudo4" class="depoimentos">
+
+            <div class="container">
+                <div class="conteudoText">
+                    <span>O QUE OS CLIENTES DIZEM</span>
+                    <span>Depoimentos de quem recomenda</span>
+                </div>
+
+                <div class="Cards">
+                    <div class="col-xs-12 col-md-3 cardDepoimentos">
+                        <img src="Imagens/Jonas.png">
+                            <span class="cardTitulo">Jonas Ferreira</span>
+                            <span class="cardDescricao">"Num momento muito sensível da minha vida precisei recorrer a um plano funerário. Graças a Multimed tive todo auxílio e apoio, sem mais desgastes emocionais, pois o plano me atendeu com rapidez."</span>                        
+                    </div>
+    
+                    <div class="col-xs-12 col-md-3 cardDepoimentos">
+                        <img src="Imagens/Paloma.png">
+                            <span class="cardTitulo">Paloma Rocha</span>
+                            <span class="cardDescricao">"O melhor da Multimed pra mim são os inúmeros benefícios. Quando preciso de algum atendimento específico e descubro que ele já está incluso no plano é um alívio. Multimed foi minha melhor escolha."</span>                        
+                    </div>
+    
+                    <div class="col-xs-12 col-md-3 cardDepoimentos">
+                        <img src="Imagens/Maria.png">
+                            <span class="cardTitulo">Maria das Dores</span>
+                            <span class="cardDescricao">"A Multimed nos deixa seguras, pois sempre nos atende com carinho, dedicação e comprometimento. O plano já nos poupou de muita burocracia, facilitando nosso atendimento em momentos difíceis."</span>                        
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+
+
+         <!--Conteúdo 4 Master/ Depoimentos -->
+         <div id="conteudo5" class="planos">
+
+            <div class="container">
+                <div class="conteudoText">
+                    <span>CONHEÇA OS PLANOS</span>
+                    <span>Escolha o seu plano perfeito.</span>
+                </div>
+
+                <div class="Cards">
+                    <div class="col-xs-12 col-md-4 cardPlanos">
+                        <span class="cardTitulo">Individual</span>
+
+                            <span class="cardDescricao">
+                                &#10148; 5 Mil Auxílio Funeral; <br/>
+                                &#10148; 15 Mil Invalidez Permanente Acidental; <br/>
+                                &#10148; 15 Mil Inden. por Morte Acidental; <br/>
+                                &#10148; 10 Mil Sorteio Semanal; <br/>
+                                &#10148; LeCupon
+                            </span>
+
+                            <span class="cardPrecoDe">
+                                De <span>R$84,70</span>/mês
+                            </span>
+
+                            <span class="cardPreco">
+                                <span>A PARTIR DE</span>
+                                <span>R$24,90</span>
+                                <span>/mês</span>
+                            </span>   
+
+                        <button class="col-xs-6 buttonQuero" onclick="botaoQuero()">Quero esse</button>                       
+                    </div>
+    
+                    
+                    <div class="col-xs-12 col-md-4 cardPlanos">
+                        <div id="planosEtiqueta">Campeão de vendas</div>
+
+                        <span class="cardTitulo">Familiar</span>
+
+                            <span class="cardDescricao">
+                                &#10148; Funeral Estendido Previsul; <br/>
+                                &#10148; 5 Mil Auxílio Funeral; <br/>
+                                &#10148; 15 Mil Invalidez Permanente Acidental; <br/>
+                                &#10148; 15 Mil Inden. por Morte Acidental; <br/>
+                                &#10148; 10 Mil Sorteio Semanal; <br/>
+                                &#10148; LeCupon
+                            </span>
+
+                            <span class="cardPrecoDe">
+                                De <span>R$115,70</span>/mês
+                            </span>
+
+                            <span class="cardPreco">
+                                <span>A PARTIR DE</span>
+                                <span>R$39,90</span>
+                                <span>/mês</span>
+                            </span>   
+
+                        <button class="col-xs-6 buttonQuero" onclick="botaoQuero()">Quero esse</button>                       
+                    </div>
+
+                    
+                </div>                
+
+            </div>
+        </div>
+
+
+        <!--Banners rodapé -->
+        <div class="bannerRodape">
+            
+            <div class="container">
+                <div class="conteudoText divTextBanner">
+                    <span>ESTÁ ESPERANDO O QUE?</span>
+                    <span>Adquira seu plano agora!</span>
+                </div>                   
+                <button class="col-xs-2" id="divButton">Quero adquirir</button>                    
+            </div>       
+
+            <div class="bannerImgRodape">
+                <img src="">
+            </div>
+                           
+        </div>
+
+         <!--Conteúdo 6 Master/ Perguntas frequentes -->
+         <div id="conteudo6" class="questions">
+
+            <div class="container">
+                <div class="conteudoText">
+                    <span>TIRE SUAS DÚVIDAS</span>
+                    <span>Perguntas frequentes</span>
+                </div>
+
+                <div class="Cards">
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 cardsQuestions">
+                        <span class="cardTitulo">
+                            Orci maecenas amet elementum eget nulla et laoreet.
+                            <i class="fas fa-chevron-down" onclick="exibeQuestoes()"></i>
+                        </span>
+                        
+                            <span class="cardDescricao" style="display: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla libero 
+                                vestibulum consectetur malesuada dui massa bibendum neque. Sit sit purus sed
+                                congue et ac id dolor sit eu accumsan.
+                            </span>                        
+                    </div>                    
+                    
+                    <br/><br/>
+                    <button class="col-xs-6 buttonQuero" onclick="botaoQuero()">Quero agora</button>               
+                    <br/><br/>
+                </div>            
+            </div>
+        </div>
+
+        <!--Parceiros rodapé -->
+        <div class="parceirosImg">
+            <a href="https://www.instagram.com/conectaempreenda/">
+                <img src="Imagens/ConectaColor.png">
+            </a>
+            <a href="http://sindilojasbh.com.br/site/">
+                <img src="Imagens/SindiColor.png">
+            </a>
+        </div>
+
+
+        <!--Rodapé -->
+        <div class="rodape">            
+            <div class="infoRodape">
+                <div class="col-xs-12 col-md-1" id="imgRodape">
+                    <img src="/Imagens/Logo.png">
+                </div>
+    
+                <div class="col-xs-12 col-md-7" id="direitosPage">
+                    <span>© 2020 MultiMed - Todos os direitos reservados. Feito e desenvolvido por Maui Comunicação.</span>
+                </div>
+    
+                <div class="col-xs-12 col-md-4" id="politicasRodape">
+                    <a href="">Política de Privacidade</a>
+                    <a href="">Política de Cookies</a>
+                    <a href="">Termos de uso</a>
+                </div>
+            </div>
+        </div>
+
+             
+        <!--WhastaApp Flutuante -->
+        <div class="whatsFlutante">
+            <a href="https://api.whatsapp.com/send?phone=5531992239776"></a>
+            <img src="Imagens/whatsappicon.png">
+        </div>
+
+
+        <!--Modal 1o acesso -->
+        <div id="modal">
+            <div class="container">
+                <div id="campoModal">
+
+                    <div id="campos">
+                        <i class="far fa-times-circle" onclick="fecharModal()"></i>
+
+                        <div class="modalTexto">
+                            <span>Se interessou?</span>
+                            <span>Entre em contato conosco, estamos prontos para tirar todas as suas dúvidas.</span>
+                        </div>
+    
+                        <input type="text" class="col-12 col-md-5 inputPadrao" placeholder="Nome">
+                        <input type="number" class="col-12 col-md-6 inputPadrao" placeholder="WhatsApp">
+                        <input type="text" class="col-12 inputPadrao" placeholder="E-mail">
+                        <input type="text" class="col-12 inputPadrao" placeholder="Mensagem">    
+                    </div>
+                
+                    <div id="campoMensagemModal" style="display: none;">
+                        <i class="far fa-times-circle" onclick="fecharModal()"></i>
+
+                        <div class="conteudoText">
+                            <span>Seus dados foram enviados com sucesso</span>
+                            <span>Em breve entraremos em contato.</span>
+                        </div>
+                    </div>
+
+                    <br/><br/>
+                    <button class="col-xs-6 buttonQuero" onclick="botaoQueroAgora()">Quero agora</button>   
+                </div>               
+            </div>
+        </div>
+
+        <div id="politicaCookie">
+            <span class="col-12 col-md-8">
+                Cookies: a gente guarda estatísticas de visitas para melhorar sua experiência de navegação, saiba mais em nossa política de privacidade.
+            </span>
+            <span class="col-12 col-md-4">
+                <button onclick="cookieAceitar();">ACEITAR E FECHAR</button>
+            </span>
+        </div>
+
+    </body>
+</html>
