@@ -153,9 +153,10 @@ img { max-width: 100%; }
 
 
 @media (min-width: 768px) and (max-width:1199px){
-    .Cards div:nth-of-type(n-2) { width: auto; }
+    .Cards div:nth-of-type(n-2) { width: auto; display: block; max-width: 100%; }
+        .planos .Cards div:nth-of-type(n-2) { display: inline-block; }
 
-    .cardDepoimentos .cardDescricao { height: 180px; }
+    .cardDepoimentos .cardDescricao { height: 60px; }
 
     .cardPlanos .cardDescricao { height: 160px; }
 }
@@ -164,7 +165,7 @@ img { max-width: 100%; }
 /* ---> MOBILE*/
 @media (max-width: 767px){
     .categorias { left: 10%; }
-    
+
     .bannerPrincipal { display: none; }
 
     .bannerPrincipalMobile { display: block; }
